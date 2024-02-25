@@ -14,9 +14,9 @@ namespace BankTransactions.Models
         [MaxLength(12,ErrorMessage ="Maximum 12 characters only.")]
         public string AccountNumber { get; set; }
         [Column(TypeName = "nvarchar(12)")]
-        [DisplayName("Beneficiary Number")]
+        [DisplayName("Beneficiary Name")]
         [Required(ErrorMessage ="This field is required.")]
-        public string BeneficiaryNumber { get; set; }
+        public string BeneficiaryName { get; set; }
         [Column(TypeName = "nvarchar(12)")]
         [DisplayName("Bank Name")]
         [Required(ErrorMessage = "This field is required.")]
@@ -27,7 +27,7 @@ namespace BankTransactions.Models
         [MaxLength(11, ErrorMessage = "Maximum 11 characters only.")]
         public string SwiftCode {  get; set; }
         [Required(ErrorMessage = "This field is required.")]
-        public string Ammount { get; set;}
+        public string Amount { get; set;}
         [DisplayFormat(DataFormatString ="{0:MMM-dd-yy}")]
         public DateTime Date {  get; set; }
     }

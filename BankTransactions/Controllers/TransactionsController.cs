@@ -44,7 +44,7 @@ namespace BankTransactions.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddorEdit([Bind("TransactionId,AccountNumber,BeneficiaryNumber,BankName,SwiftCode,Ammount,Date")] Transaction transaction)
+        public async Task<IActionResult> AddorEdit([Bind("TransactionId,AccountNumber,BeneficiaryName,BankName,SwiftCode,Amount,Date")] Transaction transaction)
         {
             if (ModelState.IsValid)
             {
